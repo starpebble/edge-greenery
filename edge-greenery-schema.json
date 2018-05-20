@@ -1,0 +1,19 @@
+{
+  "AttributeDefinitions": [
+    {
+      "AttributeName": "locationId",
+      "AttributeType": "S"
+    }
+  ],
+  "TableName": "edge-greenery-schema",
+  "KeySchema": [
+    {
+      "AttributeName": "locationId",
+      "KeyType": "HASH"
+    }
+  ],
+  "ProvisionedThroughput": {
+    "ReadCapacityUnits": 5,
+    "WriteCapacityUnits": 5
+  }
+}
