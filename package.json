@@ -1,6 +1,6 @@
 {
   "name": "edge-greenery-lambda",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A Serverless Application Model (SAM) example with a local DynamoDB",
   "main": "index.js",
   "//": "Recommend Go ^1.10, Python 2.7, Docker ^18.03, sam ^0.30, and Java ^8.0",

@@ -6,7 +6,7 @@ exports.handler = async (event) => {
   return new Promise((resolve, reject) => {
     console.log('🏄 edge greenery lambda function invoked');
     const params = {
-      'TableName': 'edge-greenery-schema',
+      'TableName': 'edge-greenery-table',
     };
     dynamodb.scan(params, (err, data) => {
       if (err) {
@@ -16,7 +16,7 @@ exports.handler = async (event) => {
         if (data.Items.length) {
           resolve('Edge Greenery Found Data!');
         } else {
-          throw new Error('❌ There is something wrong with the lambda.');
+          throw new Error('❌ There is something wrong with this lambda.');
         }
       }
     });

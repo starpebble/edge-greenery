@@ -14,7 +14,7 @@ The [Serverless Application Model (SAM)](https://github.com/awslabs/aws-sam-cli)
 
 The app intentionally throws an error. To address the error, [put an item](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/DynamoDB.html#putItem-property) into the local DynamoDB table.
 
-A [json file](edge-greenery-schema.json) with sample DynamoDB schema for one table is provided.  A [SAM yaml](template.yaml) template is provided, too.
+A schema for the 'edge-greenery-table' is provided in a [json file](edge-greenery-schema.json).  A [SAM](template.yaml) YAML template is provided, too.
 
 The [serverless app](index.js) uses [modern](https://www.ecma-international.org/ecma-262/) JavaScript syntax.
 
@@ -29,7 +29,7 @@ Download and install the following dependencies:
 * Go (v1.10 or later)
 * Docker (v18.03 or later)
 * aws sdk (v1.15.21 or later)
-* sam cli tools (v0.30 or later)
+* sam cli tools (v0.3.0 or later)
 
 Recommended developer software for Mac OS X users:
 
@@ -51,11 +51,14 @@ Recommended developer software for Mac OS X users:
 
 ### References
 
-* AWS SAM CLI tools on github
-https://github.com/awslabs/aws-sam-cli
+* aws-sam-cli python package
+https://pypi.org/project/aws-sam-cli/
 
 * Download AWS DynamoDB
 https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DynamoDBLocal.html
+
+* AWS SAM CLI tools on github
+https://github.com/awslabs/aws-sam-cli
 
 * Serverless Application Model specification on github
 https://github.com/awslabs/serverless-application-model/tree/master
